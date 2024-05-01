@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# Meal Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple utility to generate reandom meals based on a specific food selection.
 
-Currently, two official plugins are available:
+## Why?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Have you ever felt like you never know what to cook? My girlfriend does, so she urged me to find a solution, stat!
 
-## Expanding the ESLint configuration
+## Tech - React + TypeScript + Vite + Next UI
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Commands
 
-- Configure the top-level `parserOptions` property like this:
+**Tailwind** - [setup](https://tailwindcss.com/docs/guides/vite)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+tailwind npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**Next UI** [setup](https://nextui.org/docs/frameworks/vite)
+
+```bash
+npm i @nextui-org/react framer-motion
+```
