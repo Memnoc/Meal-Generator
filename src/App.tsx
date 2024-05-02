@@ -1,12 +1,16 @@
 import "./App.css";
 import { Button } from "@nextui-org/react";
 import { shuffleArray } from "./utils/shuffle";
+import { foods } from "./api/foods";
 
 function App() {
   // TODO: test implementation for the meal shuffling
-  const testArray = { data: [1, 2, 3, 4, 5] };
+  const testArray = [1, 2, 3, 4, 5];
   const shuffledTestArray = shuffleArray(testArray);
   console.log(shuffledTestArray);
+
+  const shuffledFoods = shuffleArray(foods);
+  console.log(shuffledFoods[0].name);
 
   return (
     <>
